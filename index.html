@@ -1,59 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Recipe Blog - Chocolate Cake</title>
+        <title>Birthday E-Vite</title>
         <link rel="stylesheet" href="style.css">
-        <style>
-            body {
-                font-family: verdana, arial, sans-serif;
-                padding: 10px;
-                background-color: antiquewhite
-            }
-        </style>
     </head>
-    <body>    
-        <h1>Recipe Blog by Brian</h1>
+    
+    <body>
+    
+        <div id="container"> 
+        <div id="image"><img src="background.jpg" alt="image"></div> 
+        <p>YOU HAVE BEEN INVITED!</p>  
+        <p>COME AND CELEBRATE MY 21st BIRTHDAY at 1474 G ST 11AM!</p>
+        <p>HANG OUT AND HAVE SOME FUN!</p>
+        <p>Click here to <a id="RSVP" href="change%20(2).jpg">RSVP!</a></p>
+        </div>
+        
+
         <ul class="navbar">
-            <li><a href="index.html">Chocolate Cake</a></li>
-            <li><a href="friedrice.html">Egg Fried Rice</a></li>
-            <li><a href="frenchtoast.html">French Toast</a></li>
+            <li><a href=#gifts>Gift Registry</a></li>
         </ul>
         
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+        <script src="sketch.js"></script> 
         
-        <h2>Recipe #1: Chocolate Cake</h2>
-        <table class="imageGallery">
-            <tbody>
-                <tr>
-                    <td><img src="basicchocolatecake.jpeg" alt="cake" width="379px"></td>
-                    <td><img src="basicchocolatecake2.jpg" alt="cake" width="425px"></td>
-                </tr>
-                <tr>
-                    <td><img src="basicchocolatecake3.webp" alt="cake" width="377px"></td>
-                    <td><img src="basicchocolatecake4.jpg" alt="cake" width="400px"></td>
-                </tr>
-            </tbody>
-        </table>
-        <h2>Ingredients Required:</h2>
-        <ul>
-        <li>Cooking spray</li>
-        <li>Cocoa powder</li>
-        <li>Flour</li>
-        <li>Sugar</li>
-        <li>Baking powder</li>
-        <li>Salt</li>
-        <li>Eggs</li>
-        <li>Vegetable oil</li>
-        <li>Sour cream</li>
-        <li>Vanilla extract</li>    
-        </ul>
-        <h2>Instructions:</h2>
-        <ol>
-        <li>Preheat the oven to 350 degrees Fahrenheit and apply cooking spray to your cake pan.</li>
-        <li>Place some parchment paper to the bottom of the cake pan</li>
-        <li>Get yourself a medium sized bowl and pour in 1 cup of cocoa powder and 1 1/2 cups of hot, boiling water. Whisk both until it is smooth.</li>
-        <li>Whisk 2 1/2 cups of flour, 2 cups of sugar, 1 1/2 cups of baking powder, 1 teaspoon of baking soda, and 1 teaspoon of salt in a large bowl.</li>
-        <li>Add in 3 eggs, 3/4 cup full of vegetable oil, 1/2 cup of sour cream, and 2 teaspoons of vanilla extract and use a mixer at its medium speed setting for about a minute. Once it is finished, lower the speed and mix the batter manually with a utensil, preferably with a rubber utensil like a spatula.</li>
-        <li>Place the batter into the prepped pan and bake in the oven for about 30 to 40 minutes. You will know it is ready if you stick a toothpick inside the final result and it comes out with little to no marks. Let it settle and cool down for ten minutes and enjoy the chocolate cake once you plate it! </li>
-        </ol>
+        <script>
+        let clickerButton = document.getElementById("RSVP");
+        let onButtonClick = function() {
+            clickerButton.innerHTML = "Thanks for answering! Looking forward to seeing you at the party!";
+}
+        clickerButton.addEventListener("click", onButtonClick);
+        </script>
+       
     </body>
-</html>
+        </html>
